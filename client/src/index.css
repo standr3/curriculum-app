@@ -269,7 +269,7 @@ tr {
   gap: 0.5em;
 }
 
-.form__title-row {
+.form__desc-row {
   display: flex;
   justify-content: space-between;
   align-items: center;

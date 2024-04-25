@@ -17,7 +17,7 @@ export const commitsApiSlice = apiSlice.injectEndpoints({
             validateStatus: (response, result) => {
                 return response.status === 200 && !result.isError
             },
-            keepUnusedDataFor: 5,
+            // keepUnusedDataFor: 5,
             transformResponse: responseData => {
                 const loadedCommits = responseData.map(commit => {
                     commit.id = commit._id
@@ -34,13 +34,49 @@ export const commitsApiSlice = apiSlice.injectEndpoints({
                 } else return [{ type: 'Commit', id: 'LIST' }]
             }
         }),
+        addNewCommit: builder.mutation({
+            query: initialCommit => ({
+                url: '/commits',
+                method: 'POST',
+                body: {
+                    ...initialCommit,
+                }
+            }),
+            invalidatesTags: [
+                { type: 'Commit', id: "LIST" }
+            ]
+        }),
+        updateCommit: builder.mutation({
+            query: initialCommit => ({
+                url: '/commits',
+                method: 'PATCH',
+                body: {
+                    ...initialCommit,
+                }
+            }),
+            invalidatesTags: (result, error, arg) => [
+                { type: 'Commit', id: arg.id }
+            ]
+        }),
+        deleteCommit: builder.mutation({
+            query: ({ id }) => ({
+                url: `/commits`,
+                method: 'DELETE',
+                body: { id }
+            }),
+            invalidatesTags: (result, error, arg) => [
+                { type: 'Commit', id: arg.id }
+            ]
+        }),
     }),
 })
 
 export const {
     useGetCommitsQuery,
+    useAddNewCommitMutation,
+    useUpdateCommitMutation,
+    useDeleteCommitMutation,
 } = commitsApiSlice
-
 // returns the query result object
 export const selectCommitsResult = commitsApiSlice.endpoints.getCommits.select()
 

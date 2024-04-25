@@ -14,11 +14,19 @@ const Welcome = () => {
       <h1>Welcome!</h1>
 
       <p>
-        <Link to="/dash/commits">View commits</Link>
+        <Link to="/dash/commits">View Commits</Link>
       </p>
 
       <p>
-        <Link to="/dash/users">View User Settings</Link>
+        <Link to="/dash/commits/new">Add New Commit</Link>
+      </p>
+
+      <p>
+        <Link to="/dash/users">View Users</Link>
+      </p>
+
+      <p>
+        <Link to="/dash/users/new">Add New User</Link>
       </p>
     </section>
   );
