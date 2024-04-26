@@ -8,7 +8,11 @@ const UsersList = () => {
     isSuccess,
     isError,
     error,
-  } = useGetUsersQuery();
+  } = useGetUsersQuery("usersList", {
+    pollingInterval: 60000,
+    refetchOnFocus: true,
+    refetchOnMountOrArgChange: true,
+  });
 
   let content;
 
@@ -32,7 +36,7 @@ const UsersList = () => {
             <th scope="col" className="table__th user__username">
               Username
             </th>
-            <th scope="col" className="table__th user__roles">
+            <th scope="col" className="table__th user__role">
               Role
             </th>
             <th scope="col" className="table__th user__edit">

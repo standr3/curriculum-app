@@ -24,6 +24,7 @@ app.use(cookieParser());
 app.use("/", express.static(path.join(__dirname, "/public")));
 // use the root route
 app.use("/", require("./routes/root"));
+app.use("/auth", require("./routes/authRoutes"));
 app.use("/users", require("./routes/userRoutes"));
 app.use("/commits", require("./routes/commitRoutes"));
 // the catch all route
