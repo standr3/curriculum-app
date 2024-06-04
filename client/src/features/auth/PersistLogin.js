@@ -4,8 +4,11 @@ import { useRefreshMutation } from "./authApiSlice";
 import usePersist from "../../hooks/usePersist";
 import { useSelector } from "react-redux";
 import { selectCurrentToken } from "./authSlice";
+import { useNavigate } from "react-router-dom";
 
 const PersistLogin = () => {
+  const navigate = useNavigate();
+  console.log("PersistLogin");
   const [persist] = usePersist();
   const token = useSelector(selectCurrentToken);
   const effectRan = useRef(false);
@@ -52,10 +55,11 @@ const PersistLogin = () => {
     //persist: yes, token: no
     console.log("error");
     content = (
-      <p className="errmsg">
-        {error.data?.message}
-        <Link to="/login">Please login again</Link>.
-      </p>
+      // <p className="errmsg">
+      //   {error.data?.message}
+      //   <Link to="/account/login">Please login again</Link>.
+      // </p>
+      navigate("/account/login")
     );
   } else if (isSuccess && trueSuccess) {
     //persist: yes, token: yes

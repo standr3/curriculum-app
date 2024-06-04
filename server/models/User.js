@@ -12,12 +12,12 @@ const userSchema = new mongoose.Schema({
   role: {
     type: String,
     required: true,
-    default: "Student"
+    default: "student",
   },
-
-  // active: {
-  //   type: Boolean,
-  //   default: true,
-  // },
+  groupId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "StudentGroup",
+  },
 });
+
 module.exports = mongoose.model("User", userSchema);

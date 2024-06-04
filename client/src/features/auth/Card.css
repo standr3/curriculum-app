@@ -1,0 +1,48 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;  /* Match the initial opacity state */
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;  /* Added opacity transition */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;  /* Initial opacity */
+  animation: fadeIn 0.3s ease-in;  /* Apply the fade-in animation */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  opacity: 1;  /* Full opacity on hover */
+}
+
+.card-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #555;
+}

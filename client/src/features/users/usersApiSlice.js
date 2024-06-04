@@ -12,8 +12,6 @@ export const usersApiSlice = apiSlice.injectEndpoints({
       validateStatus: (response, result) => {
         return response.status === 200 && !result.isError;
       },
-      // keepUnusedDataFor: 5,
-      
       transformResponse: (responseData) => {
         const loadedUsers = responseData.map((user) => {
           user.id = user._id;
@@ -30,7 +28,6 @@ export const usersApiSlice = apiSlice.injectEndpoints({
         } else return [{ type: "User", id: "LIST" }];
       },
     }),
-
     addNewUser: builder.mutation({
       query: (initialUserData) => ({
         url: "/users",
@@ -53,7 +50,7 @@ export const usersApiSlice = apiSlice.injectEndpoints({
     }),
     deleteUser: builder.mutation({
       query: ({ id }) => ({
-        url: "/users",
+        url: `/users`,
         method: "DELETE",
         body: { id },
       }),
