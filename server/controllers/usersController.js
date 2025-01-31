@@ -1,51 +1,39 @@
 const User = require("../models/User");
-const Commit = require("../models/Commit");
 const asyncHandler = require("express-async-handler");
 const bcrypt = require("bcrypt");
 
-// @desc Get all users
-// @route GET /users
-// @access Private
 const getAllUsers = asyncHandler(async (req, res) => {
-  // Get all users from MongoDB
   const users = await User.find().select("-password").lean();
 
-  // If no users
   if (!users?.length) {
     return res.status(400).json({ message: "No users found" });
   }
-
   res.json(users);
 });
 
-// @desc Create new user
-// @route POST /users
-// @access Private
 const createNewUser = asyncHandler(async (req, res) => {
-  const { username, password, role } = req.body;
+  const { fullname, username, password, role, groupId } = req.body;
 
-  // Confirm data
-  if (!username || !password || !role) {
+  if (!fullname || !username || !password || !role) {
     return res.status(400).json({ message: "All fields are required" });
   }
 
-  // Check for duplicate username
-  const duplicate = await User.findOne({ username }).lean().exec();
-
-  if (duplicate) {
-    return res.status(409).json({ message: "Duplicate username" });
+  const existingUser = await User.findOne({ username }).lean().exec();
+  if (existingUser) {
+    return res.status(409).json({ message: "Username already exists" });
   }
 
-  // Hash password
   const hashedPwd = await bcrypt.hash(password, 10); // salt rounds
 
-  const userObject = { username, password: hashedPwd, role };
+  const userObject = { fullname, username, password: hashedPwd, role };
+  if (role === "student" && groupId) {
+    userObject.groupId = groupId;
+  }
 
-  // Create and store new user
   const user = await User.create(userObject);
 
   if (user) {
-    //created
+    // created
     res.status(201).json({ message: `New user ${username} created` });
   } else {
     res.status(400).json({ message: "Invalid user data received" });
@@ -56,7 +44,17 @@ const createNewUser = asyncHandler(async (req, res) => {
 // @route PATCH /users
 // @access Private
 const updateUser = asyncHandler(async (req, res) => {
-  const { id, username, role, password } = req.body;
+  console.log("req.body: ", req.body);
+  const { id, username, role, password, groupId } = req.body;
+
+  if (id && !groupId) {
+    // const user = await User.findById(id).exec();
+    await User.findByIdAndUpdate(id, { $unset: { groupId: "" } });
+
+    //invalidate
+    if (!username && !role && !password)
+      return res.json({ message: `Group removed for user ${id}` });
+  }
 
   // Confirm data
   if (!id || !username || !role) {
@@ -83,12 +81,23 @@ const updateUser = asyncHandler(async (req, res) => {
   user.username = username;
   user.role = role;
 
+  if (groupId) {
+    if (role === "student") {
+      user.groupId = groupId;
+    } else {
+      user.groupId = null; // Remove groupId if not a student
+    }
+  } else {
+    console.log("aici");
+    await User.findByIdAndUpdate(user._id, { $unset: { groupId: "" } });
+  }
+
   if (password) {
-    // Hash password
-    user.password = await bcrypt.hash(password, 10); // salt rounds
+    user.password = password;
   }
 
   const updatedUser = await user.save();
+  console.log("updatedUser: ", updatedUser);
 
   res.json({ message: `${updatedUser.username} updated` });
 });
@@ -104,12 +113,6 @@ const deleteUser = asyncHandler(async (req, res) => {
     return res.status(400).json({ message: "User ID Required" });
   }
 
-  // Does the user still have assigned commits?
-  const commit = await Commit.findOne({ user: id }).lean().exec();
-  if (commit) {
-    return res.status(400).json({ message: "User has assigned commits" });
-  }
-
   // Does the user exist to delete?
   const user = await User.findById(id).exec();
 
@@ -123,7 +126,6 @@ const deleteUser = asyncHandler(async (req, res) => {
 
   res.json(reply);
 });
-
 module.exports = {
   getAllUsers,
   createNewUser,

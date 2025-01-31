@@ -1,0 +1,138 @@
+20240513	19:00:25	4d0f0827-690e-40f8-9855-3cc8f7c33dce	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240513	19:00:26	bb02de2a-eee8-4e5d-b668-08f78cbeaf4e	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240513	19:00:26	f3851e1a-1279-491b-81d8-a80e5dda2048	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240513	19:07:23	c3daf527-248f-4a01-8230-63067ff6a3d5	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240513	19:07:23	5acfbe73-a450-4213-9cdf-5390a4cd1e4b	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240513	19:07:23	24a38b72-fd6a-4d23-9043-d03623e98633	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240513	19:07:23	3fe81aa8-345a-41d4-8582-793ff5329c9a	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240513	19:07:23	411a7275-e29a-4f3c-a6bb-8cacb2a019d0	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240513	19:07:27	59459871-8c2c-48dd-9bd6-4416665b51f5	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240518	16:56:49	1d2ef2b0-9ed0-4445-8c2c-3aae4c69efa2	ValidationError: Project validation failed: owner: Cast to ObjectId failed for value "admin" (type string) at path "owner" because of "BSONError"	POST	/projects	http://localhost:3000
+20240518	17:01:30	c5288261-3090-4d4e-9913-0ba29ede48c1	ValidationError: Project validation failed: owner: Cast to ObjectId failed for value "admin" (type string) at path "owner" because of "BSONError"	POST	/projects	http://localhost:3000
+20240518	17:02:35	59932467-d531-4991-8668-a115ac8821bd	ValidationError: Project validation failed: owner: Cast to ObjectId failed for value "admin" (type string) at path "owner" because of "BSONError"	POST	/projects	http://localhost:3000
+20240519	19:05:23	d95a2765-96b4-4f35-950e-43bbf900c879	ValidationError: Project validation failed: links.0.srcId: Cast to ObjectId failed for value "srcId" (type string) at path "srcId" because of "BSONError", links.0.trgId: Cast to ObjectId failed for value "trgId" (type string) at path "trgId" because of "BSONError"	PATCH	/projects	http://localhost:3000
+20240519	19:10:00	65020dad-af5c-4fdb-85d7-5dffee67a076	ValidationError: Project validation failed: links.0.srcId: Path `srcId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:13:35	7b39da8e-8755-4626-9928-45a29ddaad5f	ValidationError: Project validation failed: links.0.srcId: Path `srcId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:13:50	f6ab6341-f512-4aff-a27b-0dee62d46a86	ValidationError: Project validation failed: links.0.trgId: Path `trgId` is required., links.0.srcId: Path `srcId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:15:45	7bc3fecc-c4a5-459a-bab6-b3e9a6cd12aa	ValidationError: Project validation failed: links.0.srcId: Path `srcId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:15:53	5a72cfdd-a9bf-4e8f-99e3-c353a61cd935	ValidationError: Project validation failed: links.0.trgId: Path `trgId` is required., links.0.srcId: Path `srcId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:16:21	2de3d089-98fa-4ea2-9a7c-c754d2b66662	ValidationError: Project validation failed: links.0.trgId: Path `trgId` is required., links.0.srcId: Path `srcId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:26:40	5f235cae-99c1-43e9-ad3a-25357a5a675e	ValidationError: Project validation failed: links.0.srcId: Path `srcId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:26:44	ed09a8bd-911d-438d-b279-2c0b57028606	ValidationError: Project validation failed: links.0.trgId: Path `trgId` is required., links.0.srcId: Path `srcId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:26:45	75dd5766-2c2a-4d9c-aa33-fad96905a22b	ValidationError: Project validation failed: links.0.trgId: Path `trgId` is required., links.0.srcId: Path `srcId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:26:50	80cb4d2e-3668-4a35-b165-93e3029a69d7	ValidationError: Project validation failed: links.0.trgId: Path `trgId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:26:51	7d84e348-ec9e-4780-b334-ec7554772f1e	ValidationError: Project validation failed: links.0.trgId: Path `trgId` is required., links.0.srcId: Path `srcId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:27:05	688b35da-f1b1-4926-a164-db0888634c01	ValidationError: Project validation failed: links.0.srcId: Path `srcId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:27:10	3d089b48-e481-4829-92a5-c2123f9e3ded	ValidationError: Project validation failed: links.0.trgId: Path `trgId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:34:14	8185959a-f700-4c1a-9c33-f2d196756562	ValidationError: Project validation failed: links.0.srcId: Path `srcId` is required.	PATCH	/projects	http://localhost:3000
+20240519	19:34:22	8b9b680b-35d8-4803-bd8a-74c1b25154ca	ValidationError: Project validation failed: links.0.trgId: Path `trgId` is required., links.0.srcId: Path `srcId` is required.	PATCH	/projects	http://localhost:3000
+20240523	20:52:13	9375a4e7-a01b-437a-8c37-b5095d0000e4	ValidationError: Project validation failed: links.3.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240524	16:19:58	0ab61517-4a88-48d7-b391-b166bbcd80e4	ValidationError: Project validation failed: links.3.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240529	13:56:02	6f37ad95-c083-480c-b421-4a3dde629025	ReferenceError: projectsWithOwner is not defined	GET	/projects	http://localhost:3000
+20240529	13:56:18	5cf2c290-8284-4d92-90a2-04f23e0c1191	ReferenceError: projectsWithOwner is not defined	GET	/projects	http://localhost:3000
+20240529	13:56:34	ae81a080-5a3b-4b11-9b11-8bbc915421c4	ReferenceError: projectsWithOwner is not defined	GET	/projects	http://localhost:3000
+20240529	13:56:50	9cb17d5f-2038-45fd-8c8f-d4d4734fd587	ReferenceError: projectsWithOwner is not defined	GET	/projects	http://localhost:3000
+20240529	13:57:06	6b462fe8-91e0-46e2-8200-c4c6f45ad7c5	TypeError: Cannot read properties of null (reading 'name')	GET	/projects	http://localhost:3000
+20240529	13:57:23	57db3884-03ed-46c2-a385-df13daa80f9a	ReferenceError: projectsWithOwner is not defined	GET	/projects	http://localhost:3000
+20240529	13:57:39	88272410-266c-43f0-95c2-d78912661ab4	ReferenceError: projectsWithOwner is not defined	GET	/projects	http://localhost:3000
+20240529	13:57:55	064a97f7-e422-482f-b186-239ada342e32	ReferenceError: projectsWithOwner is not defined	GET	/projects	http://localhost:3000
+20240529	23:08:35	e6033531-c072-4f6b-ac5a-5b12282d7bf1	ReferenceError: Cannot access 'user' before initialization	PATCH	/users	http://localhost:3000
+20240529	23:08:43	9ad6febe-ffa4-4b21-9920-f5dbad8243e7	ReferenceError: Cannot access 'user' before initialization	PATCH	/users	http://localhost:3000
+20240529	23:08:50	00e8c39f-5dfb-403c-93b4-9a34ccc3c7c2	ReferenceError: Cannot access 'user' before initialization	PATCH	/users	http://localhost:3000
+20240529	23:08:57	8b96ae2b-ad2a-405b-9e62-fe8fa6fdf839	ReferenceError: Cannot access 'user' before initialization	PATCH	/users	http://localhost:3000
+20240529	23:45:37	b6acd923-7074-49b4-a774-0ce3c423ba58	TypeError: user.save is not a function	PATCH	/users	http://localhost:3000
+20240601	22:26:45	09e86012-c8ba-477b-9e1e-ac507006b43e	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240601	22:26:49	114d4441-d0d3-4a9b-8758-ac49f57a9581	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240602	19:05:07	7a21e4b0-bece-4e6b-842a-ffa38464b16a	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240602	19:05:15	beaafc1f-c732-4db1-9cf4-21b6b3c7e35a	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240602	19:05:48	225f8ca5-b4eb-44c7-966d-8654932b3008	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240602	19:05:55	730e090e-328f-4db1-8535-00b5d5678475	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240602	19:06:00	5a202e7a-c18e-4374-bd83-d5cfc3c007d8	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240602	19:06:44	e5af43a8-72eb-47cb-840a-ad34e5e61ba7	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240602	19:06:44	4c82355b-61b8-4c37-a204-0f9eb206cb08	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240602	19:06:50	a24504ae-33fa-4801-9226-15abf688c2a4	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240602	19:07:01	db2dc383-25f8-4422-a730-161cc6a5638c	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240602	19:07:33	6fce2ad2-ac86-4d98-8fa9-918652a5a0d1	ValidationError: Project validation failed: links.3.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240603	13:24:24	f87537a6-b69f-4d4a-9ce5-8f3d9b1f5c43	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240603	13:24:25	bf8c6767-7e8c-4b36-9c5d-cbdcbf3599e2	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240603	13:24:25	5ff77b31-49c6-43d0-b9b2-1d4d8795376b	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240603	13:24:43	7354ea02-0ee9-485f-9900-9b21b3221f6b	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240603	13:25:31	e6de6df8-8bf4-4bc3-b37d-d553a11d80b4	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240603	13:27:12	e7bc20a9-ecc7-4057-acee-25e4bd6f63fd	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240603	13:27:16	669e364b-65c0-4a39-b366-197e768a5822	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240603	13:27:23	a8115886-cdde-4841-8c01-185b201f6196	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240603	13:28:06	437ea6af-eb63-4ed7-8709-1fb0e4596348	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240603	13:28:25	43b82679-360d-41aa-a333-57cc6c816227	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240603	13:28:47	046d469e-ef78-4726-b8ed-82ac864b4f7d	ValidationError: Project validation failed: links.0.target: Path `target` is required.	PATCH	/projects	http://localhost:3000
+20240607	02:14:12	5204a3b1-dbdf-4a28-a012-48c63494861e	ValidationError: Project validation failed: nodes.1.priority: Path `priority` is required.	PATCH	/projects	http://localhost:3000
+20240607	03:31:38	a45bc5ce-d087-4653-935d-75c5e4ccf310	ValidationError: Project validation failed: links.0.source: Cast to ObjectId failed for value "root" (type string) at path "source" because of "BSONError", links.0.target: Cast to ObjectId failed for value "da" (type string) at path "target" because of "BSONError"	PATCH	/projects	http://localhost:3000
+20240607	03:33:32	e67cb66d-32ed-40d2-821c-e02fe615f7f0	ValidationError: Project validation failed: links.0.source: Cast to ObjectId failed for value "root" (type string) at path "source" because of "BSONError", links.0.target: Cast to ObjectId failed for value "da" (type string) at path "target" because of "BSONError"	PATCH	/projects	http://localhost:3000
+20240607	03:34:20	50aef58b-dcc2-4120-84ff-a51a77f94ce5	ValidationError: Project validation failed: links.0.source: Cast to ObjectId failed for value "root" (type string) at path "source" because of "BSONError", links.0.target: Cast to ObjectId failed for value "da" (type string) at path "target" because of "BSONError"	PATCH	/projects	http://localhost:3000
+20240607	03:35:22	8c4be106-fc75-404e-8435-aae4fb16170f	ValidationError: Project validation failed: links.0.source: Cast to ObjectId failed for value "root" (type string) at path "source" because of "BSONError", links.0.target: Cast to ObjectId failed for value "da" (type string) at path "target" because of "BSONError"	PATCH	/projects	http://localhost:3000
+20240607	03:37:20	69e0be5f-6db3-4316-81b3-7a5521fe0de4	ValidationError: Project validation failed: links.0.source: Cast to ObjectId failed for value "root" (type string) at path "source" because of "BSONError", links.0.target: Cast to ObjectId failed for value "da" (type string) at path "target" because of "BSONError"	PATCH	/projects	http://localhost:3000
+20240607	03:39:30	76a4149f-45e6-464f-9e12-8864a1c2f7d2	ValidationError: Project validation failed: links.0.source: Cast to ObjectId failed for value "root" (type string) at path "source" because of "BSONError", links.0.target: Cast to ObjectId failed for value "da" (type string) at path "target" because of "BSONError"	PATCH	/projects	http://localhost:3000
+20240607	03:42:50	83320923-81c2-41d1-a49f-8bf4b04aa7c1	ValidationError: Project validation failed: links.0.source: Cast to ObjectId failed for value "root" (type string) at path "source" because of "BSONError", links.0.target: Cast to ObjectId failed for value "da" (type string) at path "target" because of "BSONError"	PATCH	/projects	http://localhost:3000
+20240607	03:43:02	98f148e0-e9f6-45d0-b63a-67531a3df347	ValidationError: Project validation failed: links.0.source: Cast to ObjectId failed for value "root" (type string) at path "source" because of "BSONError", links.0.target: Cast to ObjectId failed for value "da" (type string) at path "target" because of "BSONError"	PATCH	/projects	http://localhost:3000
+20240607	04:14:05	a76ef0b4-c748-4212-b319-a96e051abe92	ValidationError: Project validation failed: links.0.source: Cast to ObjectId failed for value "root" (type string) at path "source" because of "BSONError", links.0.target: Cast to ObjectId failed for value "da" (type string) at path "target" because of "BSONError"	PATCH	/projects	http://localhost:3000
+20240607	04:14:39	6a06457f-77f8-49ef-a77d-86fb44d9a555	ValidationError: Project validation failed: links.0.source: Cast to ObjectId failed for value "root" (type string) at path "source" because of "BSONError", links.0.target: Cast to ObjectId failed for value "da" (type string) at path "target" because of "BSONError"	PATCH	/projects	http://localhost:3000
+20240607	04:23:35	fce83799-a2b7-4293-a788-9ff7e9c81a99	ValidationError: Project validation failed: links.0.target: Path `target` is required., links.0.source: Path `source` is required.	PATCH	/projects	http://localhost:3000
+20240612	14:08:24	9e039b32-7956-4445-b139-567ae7914bb9	TypeError: openai.createCompletion is not a function	POST	/openai	http://localhost:3000
+20240618	18:10:00	26ded9aa-8680-4045-b826-af67fb6acef7	ValidationError: Project validation failed: grades.0: Cast to [string] failed for value "[\n' +
+  '  [\n' +
+  "    '2024-06-18:stud3:1.5',\n" +
+  "    '2024-06-18:stud1:0.5',\n" +
+  "    '2024-06-18:stud2:1'\n" +
+  '  ]\n' +
+  ']" (type string) at path "grades.0" because of "CastError"	PATCH	/projects	http://localhost:3000
+20240618	18:11:17	7f4f8c22-3fa4-4419-b2ac-a525c6bea74a	ValidationError: Project validation failed: grades.0: Cast to [string] failed for value "[\n' +
+  '  [\n' +
+  "    '2024-06-18:stud3:1.5',\n" +
+  "    '2024-06-18:stud1:0.5',\n" +
+  "    '2024-06-18:stud2:1'\n" +
+  '  ]\n' +
+  ']" (type string) at path "grades.0" because of "CastError"	PATCH	/projects	http://localhost:3000
+20240708	23:53:47	ee11dc93-5507-4295-b819-ace7935a6b92	ValidationError: Project validation failed: links.0.target: Path `target` is required., links.0.source: Path `source` is required.	PATCH	/projects	http://localhost:3000
+20240709	00:01:19	0ad4057a-f4cf-43ed-a0ff-7d857f72d008	ValidationError: Project validation failed: links.0.target: Path `target` is required., links.0.source: Path `source` is required.	PATCH	/projects	http://localhost:3000
+20240709	00:05:15	ec6fb40b-cf7f-401d-a21e-0d26dafae659	ValidationError: Project validation failed: links.0.target: Path `target` is required., links.0.source: Path `source` is required.	PATCH	/projects	http://localhost:3000
+20240709	00:06:23	d0fc63b6-fedb-4ad6-af8f-96c974276425	ValidationError: Project validation failed: links.0.target: Path `target` is required., links.0.source: Path `source` is required.	PATCH	/projects	http://localhost:3000
+20240714	01:46:55	f1b59a47-1097-4de4-b184-565e1fd3fa7f	ValidationError: User validation failed: fullname: Path `fullname` is required.	POST	/auth/register	http://localhost:3000
+20240714	15:13:24	9b103bfd-e5ac-4f1d-9656-8b1784ca6403	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 198 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:13:24	3495e02c-c518-47b1-a4f8-55bb3a0d1296	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 198 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:13:24	3b37002f-9dd0-4f36-9178-0ec645994201	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 198 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:13:24	dd1cc288-c6f0-4ecc-87c9-fd0a37f745de	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 198 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:13:24	6588b542-8ae1-40be-bc7d-b8eb7e093fdc	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 198 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:26:03	f1a62742-37d2-4def-812c-5f13007302be	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 199 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:26:03	f4e3a6d0-3f4e-4f52-be7a-bc361fdbf3ee	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 199 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:26:03	99def711-08ec-423c-86c0-ece35cf1a8da	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 199 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:27:40	63bbcdf6-78a6-46cd-8075-6fe8c9d381eb	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 200 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:33:32	44ea1682-36b4-4143-9a3d-ea35b3505526	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 201 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:33:32	cb4fc1e7-63bf-440b-8950-c8948b0a51d3	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 201 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:33:32	f6e1768b-2809-4b25-9cbf-31a266cf40aa	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 201 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:34:14	a8aed495-7439-4878-86fe-f4b9db745f6f	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 202 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:34:14	76b6506e-710c-40c4-959d-0cc323c9c021	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 202 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	15:34:14	f2da75fc-40e4-4810-9d2b-1c3d00186b78	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 202 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	16:37:36	0394f3d4-e7c5-4ec0-9ef2-83ae2df29232	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 203 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	16:37:36	ae36c22d-e5e0-4958-abe6-be40c9f1839c	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 203 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	16:37:36	d8524659-186f-4f64-bfc1-567e46ff269e	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 203 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240714	16:38:13	4b2395fe-2d7f-452f-9aaf-829239f1112d	VersionError: No matching document found for id "6661774c3a6d1bd10e85bc6d" version 204 modifiedPaths "grades"	PATCH	/projects	http://localhost:3000
+20240715	21:51:24	80ac44d0-fd61-4757-8b32-6e441fd81e0f	ValidationError: User validation failed: password: Path `password` is required.	POST	/users	http://localhost:3000
+20240715	21:54:04	8dd5c013-4463-4536-813a-7f55a4be7901	TypeError: Cannot read properties of null (reading 'username')	GET	/projects	http://localhost:3000
+20240715	21:54:08	f97d05fd-1602-4072-9ca5-fbfd6f09f8e4	TypeError: Cannot read properties of null (reading 'username')	GET	/projects	http://localhost:3000
+20240715	21:54:11	da42cb01-691c-45f5-b6dd-b2a052f4644f	TypeError: Cannot read properties of null (reading 'username')	GET	/projects	http://localhost:3000
+20240715	21:54:27	739c105c-9de5-450e-8a1c-c4e5d8c60182	TypeError: Cannot read properties of null (reading 'username')	GET	/projects	http://localhost:3000
+20240715	21:54:43	34d21018-5e9d-45c0-ba8a-096aaa81a69c	TypeError: Cannot read properties of null (reading 'username')	GET	/projects	http://localhost:3000
+20240715	21:54:59	3f3f77de-06f8-41aa-92b4-f935e213b07e	TypeError: Cannot read properties of null (reading 'username')	GET	/projects	http://localhost:3000
+20240715	21:59:08	af8494d3-6315-4f63-b9e2-5a2a09c43f41	ValidationError: User validation failed: password: Path `password` is required.	POST	/auth/register	http://localhost:3000
+20240715	21:59:33	7a8f11ae-2a01-4115-86b6-e6a6af3ced07	ValidationError: User validation failed: password: Path `password` is required.	POST	/auth/register	http://localhost:3000
+20240715	21:59:49	c5abc532-afea-4e8f-a83b-1df80af79572	ValidationError: User validation failed: password: Path `password` is required.	POST	/auth/register	http://localhost:3000
+20240715	22:00:08	03950ef6-43a4-477a-8609-ddc72549968f	ValidationError: User validation failed: password: Path `password` is required.	POST	/auth/register	http://localhost:3000
+20240715	22:00:59	08609c85-3139-41f8-a256-ecbd83bd3887	ValidationError: User validation failed: password: Path `password` is required.	POST	/auth/register	http://localhost:3000
+20240715	22:01:35	89cba3ae-8dbf-4b67-8a1f-4efc8263abc9	ValidationError: User validation failed: password: Path `password` is required.	POST	/auth/register	http://localhost:3000
+20240715	22:03:31	05dc5249-bfed-47bd-8856-e2e01ad3edfa	ValidationError: User validation failed: password: Path `password` is required.	POST	/auth/register	http://localhost:3000
+20240715	22:07:03	2a9e1101-1091-4ddb-aa2e-6e1e869da5ee	ValidationError: User validation failed: password: Path `password` is required.	POST	/auth/register	http://localhost:3000
+20240716	01:00:23	9b8c47dc-6eba-484d-8476-b377aa89098d	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240716	01:00:24	e01fa428-b234-4e32-a7fd-538d9bb834d3	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240716	01:00:24	659607b6-d417-4308-b0eb-d1724c7c4a56	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240716	01:00:25	cb284be1-0b84-41b1-985c-cbdcfeb49175	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240716	01:00:40	79adb01c-5e5b-47c4-8f44-34ebc7ee0f17	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
+20240716	01:00:41	6f3c2381-812e-4bd5-9a68-140af5591256	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/	http://localhost:3000
